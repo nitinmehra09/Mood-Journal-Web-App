@@ -12,8 +12,8 @@ public class DBConnector {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             String url = "jdbc:mysql://localhost:3306/MoodJournalDb";
-            String user = "root";
-            String password = "RedTiger!Drinks5Coffee?";
+            String user = "rot";
+            String password = "RedTiger!?";
 
             con = DriverManager.getConnection(url, user, password);
             System.out.println("Database connected successfully");
