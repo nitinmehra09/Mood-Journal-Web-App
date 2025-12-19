@@ -41,7 +41,7 @@ public class register extends HttpServlet {
                 HttpSession session = req.getSession(true);
                 session.setAttribute("email", email);
                 session.setAttribute("name", name);
-                resp.sendRedirect(req.getContextPath() + "/pages/home.jsp");
+                resp.sendRedirect(req.getContextPath() + "/pages/login.jsp");
 
             } catch (SQLException e) {
                 resp.sendRedirect("register.jsp?error=1");

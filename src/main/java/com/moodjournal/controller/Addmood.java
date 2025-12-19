@@ -27,7 +27,7 @@ public class Addmood extends HttpServlet {
         HttpSession session = req.getSession(false); // 🔥 MISSING LINE
 
         if (session == null || session.getAttribute("userId") == null) {
-            resp.sendRedirect(req.getContextPath() + "/index.jsp");
+            resp.sendRedirect(req.getContextPath() + "/home");
             return;
         }
 
@@ -45,7 +45,7 @@ public class Addmood extends HttpServlet {
             pst.setString(3, note);
             pst.executeUpdate();
 
-            resp.sendRedirect(req.getContextPath() + "/pages/home.jsp");
+            resp.sendRedirect(req.getContextPath() + "/home");
 
         } catch (SQLException e) {
             e.printStackTrace();
