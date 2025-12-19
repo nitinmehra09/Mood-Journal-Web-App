@@ -77,40 +77,33 @@ Mood-Journal-Web-App/
 │       ├── java/
 │       │   └── com/
 │       │       └── moodjournal/
-│       │           ├── model/
-│       │           │   └── MoodEntry.java
-│       │           │
-│       │           ├── dao/
-│       │           │   └── MoodDAO.java
-│       │           │
-│       │           ├── controller/
-│       │           │   ├── AddMoodServlet.java
-│       │           │   ├── ViewMoodServlet.java
-│       │           │   ├── EditMoodServlet.java
-│       │           │   └── DeleteMoodServlet.java
-│       │           │
-│       │           └── util/
-│       │               └── DBConnection.java
+│       │           ├── controller/        # Servlets (Handle requests & responses)
+│       │           ├── model/             # Business logic
+│       │           ├── dao/               # Database access (CRUD operations)
+│       │           ├── dto/               # Data Transfer Objects
+│       │           └── db/                # Database connection utility
 │       │
 │       └── webapp/
-│           ├── css/
-│           │   └── style.css
+│           ├── css/                       # Stylesheets
+│           ├── js/                        # JavaScript files (if any)
+│           ├── images/                   # Images & assets
 │           │
-│           ├── jsp/
-│           │   ├── addMood.jsp
-│           │   ├── viewMoods.jsp
-│           │   └── editMood.jsp
+│           ├── pages/                    # JSP pages (UI layer)
+│           │   ├── login.jsp
+│           │   ├── register.jsp
+│           │   ├── dashboard.jsp
+│           │   └── history.jsp
 │           │
-│           └── WEB-INF/
-│               └── web.xml
+│           ├── WEB-INF/
+│           │   └── web.xml                # Servlet configuration
+│           │
+│           └── index.jsp                  # Entry point
 │
-├── .gitignore
-├── README.md
-└── LICENSE
+├── pom.xml                                # Maven dependencies & build config
+├── .gitignore                             # Ignored files & folders
+├── README.md                              # Project documentation
 
 ```
-
----
 
 ## 🚀 How to Run the Project
 
